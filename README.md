@@ -1,12 +1,7 @@
 Refinable
 =========
 
-[![Chat on Gitter](https://img.shields.io/gitter/room/origamitower/discussion.svg?style=flat-square)](https://gitter.im/origamitower/discussion)
-[![Build status](https://img.shields.io/travis/origamitower/refinable/master.svg?style=flat-square)](https://travis-ci.org/origamitower/refinable)
-[![NPM version](https://img.shields.io/npm/v/refinable.svg?style=flat-square)](https://npmjs.org/package/refinable)
-[![Dependencies status](https://img.shields.io/david/origamitower/refinable.svg?style=flat-square)](https://david-dm.org/origamitower/refinable)
-![Licence](https://img.shields.io/npm/l/refinable.svg?style=flat-square&label=licence)
-![Stability: Stable](https://img.shields.io/badge/stability-stable-green.svg?style=flat-square)
+[![Chat on Gitter](https://img.shields.io/gitter/room/origamitower/discussion.svg?style=flat-square)](https://gitter.im/origamitower/discussion)[![Build status](https://img.shields.io/travis/origamitower/refinable/master.svg?style=flat-square)](https://travis-ci.org/origamitower/refinable)[![NPM version](https://img.shields.io/npm/v/refinable.svg?style=flat-square)](https://npmjs.org/package/refinable)[![Dependencies status](https://img.shields.io/david/origamitower/refinable.svg?style=flat-square)](https://david-dm.org/origamitower/refinable)![Licence](https://img.shields.io/npm/l/refinable.svg?style=flat-square&label=licence)![Stability: Stable](https://img.shields.io/badge/stability-stable-green.svg?style=flat-square)
 
 A better primitive for prototype-based OO.
 
@@ -17,7 +12,8 @@ A better primitive for prototype-based OO.
 const Refinable = require('refinable');
 
 const Point2d = Refinable.refine({
-  x: 0, y: 0,
+  x: 0,
+  y: 0,
   toString() {
     return this.x + ', ' + this.y
   }
