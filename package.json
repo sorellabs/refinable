@@ -1,6 +1,6 @@
 {
   "name": "refinable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Quildreen Motta <queen@robotlolita.me>",
   "description": "Better primitives for prototype-based OO.",
   "repository": {
