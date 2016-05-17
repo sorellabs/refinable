@@ -7,6 +7,7 @@ help:
 	@echo "  test ................... Runs the tests for the project."
 	@echo "  test-watch ............. Runs the tests on every change."
 	@echo "  lint ................... Lints all source files."
+	@echo "  documentation .......... Generates static API documentation."
 	@echo ""
 
 
@@ -49,3 +50,6 @@ test-watch: compile compile-test
 
 lint:
 	$(eslint) src
+
+documentation: compile
+	node tools/generate-docs.js

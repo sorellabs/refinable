@@ -7,8 +7,12 @@
 //
 //----------------------------------------------------------------------
 
-const assert    = require('assert');
-const Refinable = require('../../');
+const assert      = require('assert');
+const Refinable   = require('../../');
+const metamagical = require('metamagical-interface');
+const defineTests = require('metamagical-mocha-bridge')(metamagical, describe, it);
+
+defineTests(Refinable);
 
 describe('Refinable', _ => {
   describe('refine()', _ => {
